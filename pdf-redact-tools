@@ -52,9 +52,9 @@ class PDFRedactTools(object):
         # convert PDF to PNGs
         print 'Converting PDF to PNGs'
         subprocess.call([ 'convert',
-            '-density', '128',
+            '-density', '300',
             self.pdf_filename,
-            '-quality', '100',
+            '-quality', '00',
             '-sharpen', '0x1.0',
             self.transparent_filename])
 
